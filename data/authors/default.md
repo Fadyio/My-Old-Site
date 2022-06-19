@@ -1,12 +1,12 @@
 ---
-name: Tails Azimuth
+name: Fady nagh
 avatar: /static/images/avatar.png
 occupation: Professor of Atmospheric Science
 company: Stanford University
 email: address@yoursite.com
-twitter: https://twitter.com/Twitter
-linkedin: https://www.linkedin.com
-github: https://github.com
+twitter: https://twitter.com/fadynagh0
+linkedin: https://www.linkedin.com/in/fady0
+github: https://github.com/fady0
 ---
 
 Tails Azimuth is a professor of atmospheric sciences at the Stanford AI Lab. His research interests includes complexity modelling of tailwinds, headwinds and crosswinds.
