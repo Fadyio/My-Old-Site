@@ -4,6 +4,10 @@
 /node_modules
 /.pnp
 .pnp.js
+/.yarn/*
+!/.yarn/releases
+!/.yarn/plugins
+!/.yarn/sdks
 
 # testing
 /coverage
@@ -17,8 +21,9 @@ public/sitemap.xml
 # production
 /build
 *.xml
+
 # rss feed
-/public/feed.xml 
+/public/feed.xml
 
 # misc
 .DS_Store
@@ -34,3 +39,6 @@ yarn-error.log*
 .env.development.local
 .env.test.local
 .env.production.local
+
+# Contentlayer
+.contentlayer
