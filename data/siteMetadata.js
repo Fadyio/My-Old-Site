@@ -1,7 +1,7 @@
 const siteMetadata = {
   title: "Fady's website",
   author: 'fady',
-  headerTitle: <span className="text-indigo-500">hello</span>,
+  headerTitle: '',
   description: 'Hello internet traveler, Welcome to my internet home',
   language: 'en-us',
   theme: 'system', // system, dark or light
