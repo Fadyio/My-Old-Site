@@ -1,8 +1,8 @@
 const siteMetadata = {
   title: "Fady's website",
   author: 'fady',
-  headerTitle: '',
-  description: "Hello internet traveler! 👋 i'm Fady Nagh",
+  headerTitle: <span className="text-indigo-500">hello</span>,
+  description: 'Hello internet traveler, Welcome to my internet home',
   language: 'en-us',
   theme: 'system', // system, dark or light
   siteUrl: 'fadyio.com',
@@ -12,18 +12,15 @@ const siteMetadata = {
   socialBanner: '/static/images/twitter-card.png',
   email: 'me@fadyio.com',
   github: 'https://github.com/fady0',
-  twitter: 'https://twitter.com/fadynagh0',
-  youtube: 'https://youtube.com',
+  twitter: 'https://twitter.com/fady_io',
+  youtube: 'https://www.youtube.com/channel/UCwpSo-eWtPkDrn2H7wTtnBw',
   linkedin: 'https://www.linkedin.com/in/fady0',
   locale: 'en-US',
   analytics: {
     // If you want to use an analytics provider you have to add it to the
     // content security policy in the `next.config.js` file.
     // supports plausible, simpleAnalytics, umami or googleAnalytics
-    plausibleDataDomain: '', // e.g. tailwind-nextjs-starter-blog.vercel.app
-    simpleAnalytics: false, // true or false
-    umamiWebsiteId: '', // e.g. 123e4567-e89b-12d3-a456-426614174000
-    googleAnalyticsId: '', // e.g. UA-000000-2 or G-XXXXXXX
+    googleAnalyticsId: 'G-1ZN2JNL2H3', // e.g. UA-000000-2 or G-XXXXXXX
   },
   newsletter: {
     // supports mailchimp, buttondown, convertkit, klaviyo, revue, emailoctopus
