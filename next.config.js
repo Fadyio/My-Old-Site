@@ -12,9 +12,9 @@ const ContentSecurityPolicy = `
   connect-src *;
   font-src 'self';
   frame-src giscus.app ;
-script-src: https://www.google-analytics.com https://ssl.google-analytics.com ;
-img-src: https://www.google-analytics.com ;
-connect-src: https://www.google-analytics.com
+script-src:  *.googletagmanager.com 'strict-dynamic' ;
+img-src:     *.google-analytics.com *.googletagmanager.com ;
+connect-src: *.google-analytics.com *.analytics.google.com *.googletagmanager.com ;
 
 `
 
