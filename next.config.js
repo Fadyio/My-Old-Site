@@ -12,7 +12,10 @@ const ContentSecurityPolicy = `
   connect-src *;
   font-src 'self';
   frame-src giscus.app
-  default-src 'self' https://www.google-analytics.com 'unsafe-inline';
+script-src 'self' https://www.google-analytics.com;
+img-src https://www.google-analytics.com www.google-analytics.com https://stats.g.doubleclick.net;
+connect-src https://www.google-analytics.com www.google-analytics.com https://stats.g.doubleclick.net
+
 `
 
 const securityHeaders = [
