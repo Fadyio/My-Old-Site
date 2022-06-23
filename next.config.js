@@ -12,7 +12,7 @@ const ContentSecurityPolicy = `
   connect-src *;
   font-src 'self';
   frame-src giscus.app ;
-  script-src 'self' https://www.googletagmanager.com
+  script-src  https://www.googletagmanager.com
 `
 
 const securityHeaders = [
