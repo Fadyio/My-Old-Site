@@ -12,8 +12,10 @@ const ContentSecurityPolicy = `
   connect-src *;
   font-src 'self';
   frame-src giscus.app ;
-  script-src 'nonce-{SERVER-GENERATED-NONCE}'; 
-  img-src www.googletagmanager.com
+script-src: https://www.google-analytics.com https://ssl.google-analytics.com ;
+img-src: https://www.google-analytics.com ;
+connect-src: https://www.google-analytics.com
+
 `
 
 const securityHeaders = [
