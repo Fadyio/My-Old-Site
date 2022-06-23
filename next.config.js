@@ -12,7 +12,7 @@ const ContentSecurityPolicy = `
   connect-src *;
   font-src 'self';
   frame-src giscus.app ;
-  Content-Security-Policy: script-src 'nonce-{SERVER-GENERATED-NONCE}'; 
+  script-src 'nonce-{SERVER-GENERATED-NONCE}'; 
   img-src www.googletagmanager.com
 `
 
