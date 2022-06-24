@@ -25,10 +25,44 @@ module.exports = {
         14: '3.5rem',
       },
       fontFamily: {
-        sans: ['InterVariable', ...defaultTheme.fontFamily.sans],
+        sans: ['Inter', ...defaultTheme.fontFamily.sans],
       },
       colors: {
-        primary: colors.teal,
+        primary: {
+          100: '#FDD1D9',
+          200: '#FBA4BC',
+          300: '#F575A5',
+          400: '#EB519B',
+          500: '#DE1D8D',
+          600: '#BE1588',
+          700: '#9F0E7F',
+          800: '#800972',
+          900: '#6A0568',
+        },
+        'primary-color': {
+          100: '#FDD1D9',
+          200: '#FBA4BC',
+          300: '#F575A5',
+          400: '#EB519B',
+          500: '#DE1D8D',
+          600: '#BE1588',
+          700: '#9F0E7F',
+          800: '#800972',
+          900: '#6A0568',
+        },
+        'primary-color-dark': {
+          100: '#FDD1D9',
+          200: '#FBA4BC',
+          300: '#F575A5',
+          400: '#EB519B',
+          500: '#DE1D8D',
+          600: '#BE1588',
+          700: '#9F0E7F',
+          800: '#800972',
+          900: '#6A0568',
+        },
+        'background-color': '#000',
+        green: colors.emerald,
         gray: colors.neutral,
       },
       typography: (theme) => ({
@@ -38,7 +72,7 @@ module.exports = {
             a: {
               color: theme('colors.primary.500'),
               '&:hover': {
-                color: `${theme('colors.primary.600')} !important`,
+                color: `${theme('colors.primary.600')}`,
               },
               code: { color: theme('colors.primary.400') },
             },
@@ -63,7 +97,7 @@ module.exports = {
               backgroundColor: theme('colors.gray.800'),
             },
             code: {
-              color: theme('colors.pink.500'),
+              color: theme('colors.green.500'),
               backgroundColor: theme('colors.gray.100'),
               paddingLeft: '4px',
               paddingRight: '4px',
@@ -106,7 +140,7 @@ module.exports = {
             a: {
               color: theme('colors.primary.500'),
               '&:hover': {
-                color: `${theme('colors.primary.400')} !important`,
+                color: `${theme('colors.primary.400')} `,
               },
               code: { color: theme('colors.primary.400') },
             },
