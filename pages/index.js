@@ -24,38 +24,11 @@ export default function Home({ posts }) {
           <div className="pt-6">
             <h1 className="pb-6 text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
               Hi, I am{' '}
-              <span className="text-primary-color-500 dark:text-primary-color-dark-500">Parth</span>
+              <span className="text-primary-color-500 dark:text-primary-color-dark-500">Fady</span>
             </h1>
             <h2 className="prose text-lg text-gray-600 dark:text-gray-300">
-              {`Welcome to ${siteMetadata.description}. I am a Data Engineer who is passionate about Data Science and Automation. In my free time, I like developing `}
-              <Link
-                href="/projects"
-                className="special-underline no-underline hover:text-gray-100 dark:text-gray-100 hover:dark:text-gray-100"
-              >
-                side projects
-              </Link>
-              {' and '}
-              <Link
-                href="/blog"
-                className="special-underline no-underline hover:text-gray-100 dark:text-gray-100 hover:dark:text-gray-100"
-              >
-                blogging
-              </Link>
-              {' about them.'}
+              {`Welcome to ${siteMetadata.description}. I’m a software developer. and I have bachelor degree in information technology. I have one main opinion about programming and computer science, which is that deeply understanding the underlying systems you use is essential if you want to be able to solve hard problems  `}
             </h2>
-            <p className="pt-3 text-lg leading-7 text-slate-600 dark:text-slate-300">
-              This is my place for{' '}
-              <RoughNotation
-                type="box"
-                show={true}
-                color="#DE1D8D"
-                animationDelay={800}
-                animationDuration={2500}
-              >
-                thoughts, reflections & everything&nbsp;
-              </RoughNotation>
-              in between. Have a good read!
-            </p>
           </div>
           <div className="flex items-center justify-center">
             <div className="grid grid-cols-1 grid-rows-3 gap-8 py-12">
@@ -91,7 +64,7 @@ export default function Home({ posts }) {
               <div className="my-2 grid items-start gap-8">
                 <div className="group relative">
                   <div className="animate-tilt absolute -inset-0.5 rounded-lg bg-gradient-to-r from-pink-600 to-purple-600 opacity-50 blur transition duration-1000 group-hover:opacity-100 group-hover:duration-200"></div>
-                  <Link href="https://parthdesai.vercel.app/">
+                  <Link href="https://fadyio.com/about">
                     <span className="relative flex items-center divide-x divide-gray-600 rounded-lg bg-white px-7 py-4 leading-none dark:bg-black">
                       <span className="flex items-center space-x-5">
                         <svg
@@ -108,10 +81,10 @@ export default function Home({ posts }) {
                             d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
                           />
                         </svg>
-                        <span className="pr-6 text-gray-900 dark:text-gray-100">Read my story</span>
+                        <span className="pr-6 text-gray-900 dark:text-gray-100">about me</span>
                       </span>
                       <span className="pl-6 text-indigo-400 transition duration-200 group-hover:text-gray-900 dark:group-hover:text-gray-100">
-                        Website&nbsp;&rarr;
+                        about me&nbsp;&rarr;
                       </span>
                     </span>
                   </Link>
@@ -120,7 +93,7 @@ export default function Home({ posts }) {
               <div className="my-2 grid items-start gap-8">
                 <div className="group relative">
                   <div className="animate-tilt absolute -inset-0.5 rounded-lg bg-gradient-to-r  from-fuchsia-600 to-emerald-600 opacity-50 blur transition duration-1000 group-hover:opacity-100 group-hover:duration-200"></div>
-                  <Link href="https://parthdesai.vercel.app/resume.pdf">
+                  <Link href="/resume.pdf">
                     <span className="relative flex items-center divide-x divide-gray-600 rounded-lg bg-white px-7 py-4 leading-none dark:bg-black">
                       <span className="flex items-center space-x-5">
                         <svg
@@ -139,7 +112,7 @@ export default function Home({ posts }) {
                             d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
                           />
                         </svg>
-                        <span className="pr-6 text-gray-900 dark:text-gray-100">Hire me!</span>
+                        <span className="pr-6 text-gray-900 dark:text-gray-100">Resume!</span>
                       </span>
                       <span className="pl-6 text-primary-400 transition duration-200 group-hover:text-gray-900 dark:group-hover:text-gray-100">
                         Resume&nbsp;&rarr;
