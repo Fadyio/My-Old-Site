@@ -1,21 +1,24 @@
 import Mail from './mail.svg'
 import Github from './github.svg'
-import Facebook from './facebook.svg'
 import Linkedin from './linkedin.svg'
 import Twitter from './twitter.svg'
+import reddit from './reddit.svg'
 import External from './external.svg'
 import Globe from './globe.svg'
-
+import telegram from './telegram.svg'
+import youtube from './youtube.svg'
 // Icons taken from: https://simpleicons.org/
 
 const components = {
-  mail: External,
+  mail: Mail,
   github: Github,
-  facebook: Facebook,
   linkedin: Linkedin,
   twitter: Twitter,
   website: Globe,
+  reddit: reddit,
+  telegram: telegram,
   external: External,
+  youtube: youtube,
 }
 
 const SocialIcon = ({ kind, href, size = 8 }) => {

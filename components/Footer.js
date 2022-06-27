@@ -9,11 +9,11 @@ export default function Footer() {
         <div className="mb-3 flex space-x-4">
           <SocialIcon kind="mail" href={`mailto:${siteMetadata.email}`} size="6" />
           <SocialIcon kind="github" href={siteMetadata.github} size="6" />
-          <SocialIcon kind="facebook" href={siteMetadata.facebook} size="6" />
           <SocialIcon kind="youtube" href={siteMetadata.youtube} size="6" />
           <SocialIcon kind="linkedin" href={siteMetadata.linkedin} size="6" />
           <SocialIcon kind="twitter" href={siteMetadata.twitter} size="6" />
-          <SocialIcon kind="website" href={siteMetadata.website} size="6" />
+          <SocialIcon kind="reddit" href={siteMetadata.reddit} size="6" />
+          <SocialIcon kind="telegram" href={siteMetadata.telegram} size="6" />
         </div>
         <br />
         <div className="mb-2 flex space-x-2 text-sm text-gray-500 dark:text-gray-400">
