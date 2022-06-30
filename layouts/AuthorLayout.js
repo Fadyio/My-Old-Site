@@ -23,7 +23,6 @@ export default function AuthorLayout({ children, frontMatter }) {
     text2,
     text3,
   } = frontMatter
-
   return (
     <>
       <PageSEO title={`About - ${name}`} description={`About me - ${name}`} />
@@ -48,11 +47,8 @@ export default function AuthorLayout({ children, frontMatter }) {
             <div className="flex space-x-3 pt-6">
               <SocialIcon kind="mail" href={`mailto:${email}`} />
               <SocialIcon kind="github" href={github} />
-              <SocialIcon kind="twitter" href={twitter} />
               <SocialIcon kind="linkedin" href={linkedin} />
-              <SocialIcon kind="youtube" href={youtube} />
-              <SocialIcon kind="reddit" href={reddit} />
-              <SocialIcon kind="telegram" href={telegram} />
+              <SocialIcon kind="twitter" href={twitter} />
             </div>
           </div>
           <div className="prose max-w-none pt-8 pb-8 dark:prose-dark xl:col-span-2">
@@ -62,8 +58,8 @@ export default function AuthorLayout({ children, frontMatter }) {
                 brackets={['left', 'right']}
                 show={true}
                 color="#FF0000"
-                animationDelay={200}
-                animationDuration={1200}
+                animationDelay={300}
+                animationDuration={3000}
               >
                 {text1} Currently, I am focused on building data pipelines and automating them at{' '}
                 <Link
@@ -79,8 +75,15 @@ export default function AuthorLayout({ children, frontMatter }) {
             <p>
               I am always looking to learn new things. I am currently working on a few projects
               related to
-              <RoughNotation type="highlight" show={true} color="#FBCFE8" animationDuration={1200}>
-                <span className="dark:text-black">
+              <RoughNotation
+                animationDelay="1000"
+                animationDuration="3000"
+                type="highlight"
+                color="#0ea4e9"
+                strokeWidth="3"
+                show={true}
+              >
+                <span className="text-black dark:text-white">
                   Natural Language Processing and Machine Learning.
                 </span>
               </RoughNotation>
@@ -88,9 +91,9 @@ export default function AuthorLayout({ children, frontMatter }) {
               <RoughNotation
                 type="underline"
                 show={true}
-                color="#00FFFF"
-                animationDelay={800}
-                animationDuration={1200}
+                color="#FBCFE8"
+                animationDelay={1500}
+                animationDuration={3000}
                 multiline={true}
               >
                 actively on the lookout for remote internships which I can pursue in field of Data
@@ -102,7 +105,13 @@ export default function AuthorLayout({ children, frontMatter }) {
               I am a strong advocate for open source and I am always interested in working on new
               projects with new people. Feel free to reach out if you have anything to talk about,
               you can reach me on{' '}
-              <RoughNotation type="box" show={true} color="#FF5733" animationDelay={800}>
+              <RoughNotation
+                type="box"
+                show={true}
+                color="#FF5733"
+                animationDelay={200}
+                animationDuration={3000}
+              >
                 <Link
                   href={'mailto:desaiparth2000@gmail.com'}
                   className="special-underline no-underline hover:text-gray-100 dark:text-gray-100 hover:dark:text-gray-100"
@@ -154,5 +163,5 @@ export default function AuthorLayout({ children, frontMatter }) {
         </div>
       </div>
     </>
-  )
+)
 }
