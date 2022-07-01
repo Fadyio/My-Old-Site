@@ -26,24 +26,7 @@ const siteMetadata = {
     provider: 'emailOctopus',
   },
   comment: {
-    provider: 'giscus',
-    giscusConfig: {
-      repo: process.env.NEXT_PUBLIC_GISCUS_REPO,
-      repositoryId: process.env.NEXT_PUBLIC_GISCUS_REPOSITORY_ID,
-      category: process.env.NEXT_PUBLIC_GISCUS_CATEGORY,
-      categoryId: process.env.NEXT_PUBLIC_GISCUS_CATEGORY_ID,
-      mapping: 'pathname',
-      reactions: '1',
-      // Send discussion metadata periodically to the parent window: 1 = enable / 0 = disable
-      metadata: '0',
-      // theme example: light, dark, dark_dimmed, dark_high_contrast
-      // transparent_dark, preferred_color_scheme, custom
-      theme: 'dark_dimmed',
-      inputPosition: 'bottom',
-      lang: 'en',
-      darkTheme: 'dark_dimmed',
-      themeURL: '',
-    },
+    provider: '',
   },
   socialAccount: {
     twitter: 'Fady_io',
