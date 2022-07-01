@@ -29,7 +29,7 @@ module.exports = {
       },
       gradientColorStops: {
         // https://coolors.co/2d00f7-6a00f4-8900f2-a100f2-b100e8-bc00dd-d100d1-db00b6-e500a4-f20089
-        'gradient-1-start': '#F20089',
+        'gradient-1-start': '#fcc21a',
         'gradient-1-end': '#D100D1',
         'gradient-2-start': '#D100D1',
         'gradient-2-end': '#A100F2',
