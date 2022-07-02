@@ -25,12 +25,28 @@ const siteMetadata = {
   newsletter: {
     provider: '',
   },
-  comment: {
-    provider: '',
+comment: {
+    provider: 'giscus',
+    giscusConfig: {
+      repo: process.env.NEXT_PUBLIC_GISCUS_REPO,
+      repositoryId: process.env.NEXT_PUBLIC_GISCUS_REPOSITORY_ID,
+      category: process.env.NEXT_PUBLIC_GISCUS_CATEGORY,
+      categoryId: process.env.NEXT_PUBLIC_GISCUS_CATEGORY_ID,
+      mapping: 'url',
+      reactions: '1',
+      // Send discussion metadata periodically to the parent window: 1 = enable / 0 = disable
+      metadata: '0',
+      // theme example: light, dark, dark_dimmed, dark_high_contrast
+      // transparent_dark, preferred_color_scheme, custom
+      theme: 'dark_dimmed',
+      inputPosition: 'top',
+      lang: 'en',
+      darkTheme: 'dark_dimmed',
+      themeURL: '',
+    },
   },
   socialAccount: {
-    twitter: 'Fady_io',
+    twitter: 'fady_io',
   },
 }
-
 module.exports = siteMetadata
