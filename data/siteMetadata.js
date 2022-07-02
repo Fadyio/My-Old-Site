@@ -25,7 +25,10 @@ const siteMetadata = {
   newsletter: {
     provider: '',
   },
- socialAccount: {
+  comment: {
+    provider: '',
+  },
+  socialAccount: {
     twitter: 'Fady_io',
   },
 }
