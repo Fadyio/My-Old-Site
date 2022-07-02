@@ -32,7 +32,7 @@ comment: {
       repositoryId: process.env.NEXT_PUBLIC_GISCUS_REPOSITORY_ID,
       category: process.env.NEXT_PUBLIC_GISCUS_CATEGORY,
       categoryId: process.env.NEXT_PUBLIC_GISCUS_CATEGORY_ID,
-      mapping: 'url',
+      mapping: 'map',
       reactions: '1',
       // Send discussion metadata periodically to the parent window: 1 = enable / 0 = disable
       metadata: '0',
