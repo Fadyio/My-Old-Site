@@ -1,5 +1,5 @@
 <div align="center">
-  <img alt="Logo" src="https://github.com/fadyio/my-site/blob/main/public/static/images/logo.png" width="100" />
+  <img alt="Logo" src="https://github.com/fadyio/my-site/blob/main/public/static/images/logo.png" width="300" />
 </div>
 
 
