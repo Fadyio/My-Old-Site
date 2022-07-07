@@ -3,6 +3,7 @@ import PageTitle from '@/components/PageTitle'
 import SectionContainer from '@/components/SectionContainer'
 import { BlogSEO } from '@/components/SEO'
 import Image from '@/components/Image'
+import ViewCounter from '@/components/ViewCounter'
 import Tag from '@/components/Tag'
 import siteMetadata from '@/data/siteMetadata'
 import Comments from '@/components/comments'
@@ -16,6 +17,7 @@ import {
   WhatsappShareButton,
 } from 'react-share'
 import { SocialIcon } from 'react-social-icons'
+import { HiOutlinePencil, HiOutlineClock, HiOutlineEye } from 'react-icons/hi'
 
 const editUrl = (fileName) => `${siteMetadata.siteRepo}/blob/master/data/blog/${fileName}`
 
@@ -34,7 +36,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
       <ScrollTopAndComment />
       <article>
         <div className="xl:divide-y xl:divide-gray-200 xl:dark:divide-gray-700">
-          <header className="pt-6 xl:pb-6">
+          <header className="pt-6 xl:pb-5">
             <div className="space-y-1 text-center">
               <dl className="space-y-10">
                 <div>
@@ -50,39 +52,17 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                 <PageTitle>{title}</PageTitle>
               </div>
               <div className="flex justify-center gap-5 py-4">
-                <span className="flex items-center gap-1">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-5 w-5"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"
-                    />
-                  </svg>
+                <span className="flex items-center gap-1.5">
+                  <HiOutlinePencil className="h-5 w-5" />
                   {readingTime.words} words
                 </span>
-                <span className="flex items-center gap-1">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-5 w-5"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                    />
-                  </svg>
+                <span className="flex items-center gap-1.5">
+                  <HiOutlineClock className="h-5 w-5" />
                   {readingTime.text}
+                </span>
+                <span className="flex items-center gap-1.5">
+                  <HiOutlineEye className="h-5 w-5" />
+                  <ViewCounter className="ml-0" slug={slug} blogPage={true} />
                 </span>
               </div>
             </div>
@@ -117,6 +97,19 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                               className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
                             >
                               {author.twitter.replace('https://twitter.com/', '@')}
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                className="ml-0.5 inline-block h-4 w-4 fill-current"
+                              >
+                                <g data-name="Layer 2">
+                                  <g data-name="external-link">
+                                    <rect width="24" height="24" opacity="0" />
+                                    <path d="M20 11a1 1 0 0 0-1 1v6a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h6a1 1 0 0 0 0-2H6a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3v-6a1 1 0 0 0-1-1z" />
+                                    <path d="M16 5h1.58l-6.29 6.28a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0L19 6.42V8a1 1 0 0 0 1 1 1 1 0 0 0 1-1V4a1 1 0 0 0-1-1h-4a1 1 0 0 0 0 2z" />
+                                  </g>
+                                </g>
+                              </svg>
                             </Link>
                           )}
                         </dd>

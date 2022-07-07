@@ -1,13 +1,14 @@
 import siteMetadata from '@/data/siteMetadata'
 import headerNavLinks from '@/data/headerNavLinks'
-import Logo from '@/data/logo.png'
 import Link from './Link'
 import SectionContainer from './SectionContainer'
 import Footer from './Footer'
-import MobileNav from './MobileNav'
+import { navigation } from '@/data/nav'
 import ThemeSwitch from './ThemeSwitch'
 import Typewriter from 'typewriter-effect'
 import { useRouter } from 'next/router'
+// import Logo from '@/data/logo.svg'
+// import MobileNav from './MobileNav'
 
 const LayoutWrapper = ({ children }) => {
   const router = useRouter()
@@ -48,14 +49,14 @@ const LayoutWrapper = ({ children }) => {
                 <Link
                   key={link.title}
                   href={link.href}
-                  className="hover:bg-overlay rounded-md p-2 font-medium text-gray-900 duration-200 ease-in-out hover:bg-gray-400 hover:bg-opacity-80 dark:text-gray-100 hover:dark:bg-gray-700 sm:p-4"
+                  className="link-underline-black link-underline rounded py-1 px-2 font-medium text-gray-900 hover:bg-gray-200 dark:text-gray-100 dark:hover:bg-gray-700 sm:py-2 sm:px-3"
                 >
                   {link.title}
                 </Link>
               ))}
             </div>
             <ThemeSwitch />
-            <MobileNav />
+            {/* <MobileNav /> */}
           </div>
         </header>
         <main className="mb-auto">{children}</main>

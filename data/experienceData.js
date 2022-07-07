@@ -1,10 +1,10 @@
 const experienceData = [
   {
-    title: 'Software Engineering',
-    company: 'elfoad',
-    location: 'Cairo, Egypt',
-    range: 'January 2018- May 2019',
-    url: 'https://www.elfoad.com',
+    title: 'Data Engineering Intern',
+    company: 'Accenture',
+    location: 'Ahmedabad, India',
+    range: 'January 2022 - May 2022',
+    url: 'https://www.accenture.com/gr-en/about/consulting-index',
     text1:
       'Helped with the digital transformation of BOAT by working on their platform called ByteETL.',
     text2:

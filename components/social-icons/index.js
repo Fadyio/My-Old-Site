@@ -1,26 +1,21 @@
-import Mail from './mail.svg'
-import Github from './github.svg'
-import Linkedin from './linkedin.svg'
-import Twitter from './twitter.svg'
-import reddit from './reddit.svg'
-import External from './external.svg'
-import Globe from './globe.svg'
-import telegram from './telegram.svg'
-import youtube from './youtube.svg'
-import Facebook from './facebook.svg'
-// Icons taken from: https://simpleicons.org/
+import {
+  AiOutlineMail,
+  AiOutlineGithub,
+  AiOutlineFacebook,
+  AiOutlineTwitter,
+  AiOutlineGlobal,
+} from 'react-icons/ai'
+import { FaLinkedinIn } from 'react-icons/fa'
+import { FiExternalLink, FiMail } from 'react-icons/fi'
 
 const components = {
-  mail: Mail,
-  github: Github,
-  linkedin: Linkedin,
-  twitter: Twitter,
-  website: Globe,
-  reddit: reddit,
-  telegram: telegram,
-  external: External,
-  facebook: Facebook,
-  youtube: youtube,
+  mail: FiMail,
+  github: AiOutlineGithub,
+  facebook: AiOutlineFacebook,
+  linkedin: FaLinkedinIn,
+  twitter: AiOutlineTwitter,
+  website: AiOutlineGlobal,
+  external: FiExternalLink,
 }
 
 const SocialIcon = ({ kind, href, size = 8 }) => {
@@ -31,7 +26,7 @@ const SocialIcon = ({ kind, href, size = 8 }) => {
 
   return (
     <a
-      className="text-sm text-gray-500 transition hover:text-gray-600"
+      className="text-sm text-gray-500 transition duration-200 hover:rotate-180 hover:text-gray-600"
       target="_blank"
       rel="noopener noreferrer"
       href={href}

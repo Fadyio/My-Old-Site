@@ -29,7 +29,7 @@ module.exports = {
       },
       gradientColorStops: {
         // https://coolors.co/2d00f7-6a00f4-8900f2-a100f2-b100e8-bc00dd-d100d1-db00b6-e500a4-f20089
-        'gradient-1-start': '#fcc21a',
+        'gradient-1-start': '#F20089',
         'gradient-1-end': '#D100D1',
         'gradient-2-start': '#D100D1',
         'gradient-2-end': '#A100F2',
@@ -38,46 +38,46 @@ module.exports = {
       },
       colors: {
         primary: {
-    100: "#feecb5",
-    200: "#fde185",
-    300: "#fdd654",
-    400: "#fdcb30",
-    500: "#fcc21a",
-    600: "#fcb514",
-    700: "#fca211",
-    800: "#fc910f",
-    900: "#fb730b"
+          100: '#FDD1D9',
+          200: '#FBA4BC',
+          300: '#F575A5',
+          400: '#EB519B',
+          500: '#DE1D8D',
+          600: '#BE1588',
+          700: '#9F0E7F',
+          800: '#800972',
+          900: '#6A0568',
         },
         'primary-color': {
-    100: "#feecb5",
-    200: "#fde185",
-    300: "#fdd654",
-    400: "#fdcb30",
-    500: "#fcc21a",
-    600: "#fcb514",
-    700: "#fca211",
-    800: "#fc910f",
-    900: "#fb730b"
+          100: '#FDD1D9',
+          200: '#FBA4BC',
+          300: '#F575A5',
+          400: '#EB519B',
+          500: '#DE1D8D',
+          600: '#BE1588',
+          700: '#9F0E7F',
+          800: '#800972',
+          900: '#6A0568',
         },
         'primary-color-dark': {
-    100: "#feecb5",
-    200: "#fde185",
-    300: "#fdd654",
-    400: "#fdcb30",
-    500: "#fcc21a",
-    600: "#fcb514",
-    700: "#fca211",
-    800: "#fc910f",
-    900: "#fb730b"
+          100: '#FDD1D9',
+          200: '#FBA4BC',
+          300: '#F575A5',
+          400: '#EB519B',
+          500: '#DE1D8D',
+          600: '#BE1588',
+          700: '#9F0E7F',
+          800: '#800972',
+          900: '#6A0568',
         },
-        'background-color': '#000001',
+        'background-color': '#000',
         green: colors.emerald,
-        gray: colors.gray,
+        gray: colors.neutral,
       },
       typography: (theme) => ({
         DEFAULT: {
           css: {
-            color: theme('colors.gray.300'),
+            color: theme('colors.gray.700'),
             a: {
               color: theme('colors.primary.500'),
               '&:hover': {
@@ -103,7 +103,7 @@ module.exports = {
               color: theme('colors.gray.900'),
             },
             pre: {
-              backgroundColor: theme('colors.gray.900'),
+              backgroundColor: theme('colors.gray.800'),
             },
             code: {
               color: theme('colors.green.500'),
@@ -128,7 +128,7 @@ module.exports = {
               paddingBottom: '2px',
               borderRadius: '0.25rem',
             },
-            hr: { borderColor: theme('colors.gray.900') },
+            hr: { borderColor: theme('colors.gray.200') },
             'ol li::marker': {
               fontWeight: '600',
               color: theme('colors.gray.500'),

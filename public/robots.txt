@@ -1,4 +1,4 @@
-Sitemap: https://musing.vercel.app/sitemap.xml
+Sitemap: https://fadyio.com/sitemap.xml
 
 User-agent: *
 Allow: /
