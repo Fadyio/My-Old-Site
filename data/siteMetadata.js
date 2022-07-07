@@ -1,6 +1,6 @@
 const siteMetadata = {
-  title: 'Blog | Fady I/O',
-  author: 'Fady I/O',
+  title: 'Fady Nagh',
+  author: 'Fady Nagh',
   headerTitle: 'Fady I/O',
   description: 'my personal blog where I share my thought',
   language: 'en-us',
