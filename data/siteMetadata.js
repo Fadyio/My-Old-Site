@@ -23,7 +23,7 @@ const siteMetadata = {
     googleAnalyticsId: 'G-1ZN2JNL2H3', // e.g. UA-000000-2 or G-XXXXXXX
   },
   newsletter: {
-    provider: '',
+    provider: 'mailchimp',
   },
 comment: {
     provider: 'giscus',
