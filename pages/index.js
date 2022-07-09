@@ -55,7 +55,7 @@ export default function Home({ posts }) {
               </h1>
             </div>
 
-            <h2 className="prose text-gray-800 dark:text-gray-100 space-x-2 text-lg">
+            <h2 className="prose space-x-2 text-lg text-gray-800 dark:text-gray-100">
               <span>
                 Welcome to {siteMetadata.description}. I am a Software Engineer passionate about
                 frontend tech, building pipelines and automation. In my free time, I like developing
