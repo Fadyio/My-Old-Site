@@ -1,13 +1,13 @@
 const projectsData = [
   {
-    title: 'InstantMD',
-    description: `Instant MD is an Investigation, Medication and Chief complaint recognition application using Natural Language Processing. 🏆 Winner of the HealthCare Track at the MINeD Hackathon.`,
+    title: 'NeoVim',
+    description: `My NeoVim config`,
     imgSrc: '',
     href: '',
-    github: 'https://github.com/pycoder2000/InstantMD',
-    tech1: 'Regex',
-    tech2: 'Flask',
-    tech3: 'Semantic UI',
+    github: 'https://github.com/fadyio/Nvim',
+    tech1: 'Linux',
+    tech2: '',
+    tech3: '',
   },
 ]
 

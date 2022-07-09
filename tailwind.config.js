@@ -77,7 +77,7 @@ module.exports = {
       typography: (theme) => ({
         DEFAULT: {
           css: {
-            color: theme('colors.gray.300'),
+            color: theme('colors.black.900'),
             a: {
               color: theme('colors.primary.500'),
               '&:hover': {
@@ -121,7 +121,7 @@ module.exports = {
               content: 'none',
             },
             details: {
-              backgroundColor: theme('colors.gray.100'),
+              backgroundColor: theme('colors.gray.900'),
               paddingLeft: '4px',
               paddingRight: '4px',
               paddingTop: '2px',
@@ -145,7 +145,7 @@ module.exports = {
         },
         dark: {
           css: {
-            color: theme('colors.gray.300'),
+            color: theme('colors.gray.100'),
             a: {
               color: theme('colors.primary.500'),
               '&:hover': {
