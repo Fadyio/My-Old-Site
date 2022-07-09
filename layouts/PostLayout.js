@@ -7,7 +7,6 @@ import formatDate from '@/lib/utils/formatDate'
 import Comments from '@/components/comments'
 import ScrollTopAndComment from '@/components/ScrollTopAndComment'
 import { HiOutlinePencil, HiOutlineClock, HiOutlineEye } from 'react-icons/hi'
-import ViewCounter from '@/components/ViewCounter'
 import {
   FacebookShareButton,
   TwitterShareButton,
@@ -52,10 +51,6 @@ export default function PostSimple({ frontMatter, authorDetails, next, prev, chi
                 <span className="flex items-center gap-1.5">
                   <HiOutlineClock className="h-5 w-5" />
                   {readingTime.text}
-                </span>
-                <span className="flex items-center gap-1.5">
-                  <HiOutlineEye className="h-5 w-5" />
-                  <ViewCounter className="ml-0" slug={slug} blogPage />
                 </span>
               </div>
             </div>

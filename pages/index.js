@@ -5,7 +5,6 @@ import siteMetadata from '@/data/siteMetadata'
 import { getAllFilesFrontMatter } from '@/lib/mdx'
 import formatDate from '@/lib/utils/formatDate'
 import { RoughNotation } from 'react-rough-notation'
-import ViewCounter from '@/components/ViewCounter'
 import { useRouter } from 'next/router'
 import NewsletterForm from '@/components/NewsletterForm'
 
@@ -238,9 +237,6 @@ export default function Home({ posts }) {
                                 {title}
                               </h2>
                             </Link>
-                            <p className="mt-1 mb-4 w-32 text-left text-gray-500 md:mb-0 md:text-right">
-                              <ViewCounter slug={slug} blogPage={false} />
-                            </p>
                           </div>
                           <div className="flex flex-wrap">
                             {tags.map((tag) => (
