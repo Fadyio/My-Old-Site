@@ -38,37 +38,37 @@ module.exports = {
       },
       colors: {
         primary: {
-    100: "#feecb5",
-    200: "#fde185",
-    300: "#fdd654",
-    400: "#fdcb30",
-    500: "#fcc21a",
-    600: "#fcb514",
-    700: "#fca211",
-    800: "#fc910f",
-    900: "#fb730b"
+          100: '#feecb5',
+          200: '#fde185',
+          300: '#fdd654',
+          400: '#fdcb30',
+          500: '#fcc21a',
+          600: '#fcb514',
+          700: '#fca211',
+          800: '#fc910f',
+          900: '#fb730b',
         },
         'primary-color': {
-    100: "#feecb5",
-    200: "#fde185",
-    300: "#fdd654",
-    400: "#fdcb30",
-    500: "#fcc21a",
-    600: "#fcb514",
-    700: "#fca211",
-    800: "#fc910f",
-    900: "#fb730b"
+          100: '#feecb5',
+          200: '#fde185',
+          300: '#fdd654',
+          400: '#fdcb30',
+          500: '#fcc21a',
+          600: '#fcb514',
+          700: '#fca211',
+          800: '#fc910f',
+          900: '#fb730b',
         },
         'primary-color-dark': {
-    100: "#feecb5",
-    200: "#fde185",
-    300: "#fdd654",
-    400: "#fdcb30",
-    500: "#fcc21a",
-    600: "#fcb514",
-    700: "#fca211",
-    800: "#fc910f",
-    900: "#fb730b"
+          100: '#feecb5',
+          200: '#fde185',
+          300: '#fdd654',
+          400: '#fdcb30',
+          500: '#fcc21a',
+          600: '#fcb514',
+          700: '#fca211',
+          800: '#fc910f',
+          900: '#fb730b',
         },
         'background-color': '#000001',
         green: colors.emerald,
@@ -77,7 +77,7 @@ module.exports = {
       typography: (theme) => ({
         DEFAULT: {
           css: {
-            color: theme('colors.black.900'),
+            color: theme('colors.black.100'),
             a: {
               color: theme('colors.primary.500'),
               '&:hover': {
