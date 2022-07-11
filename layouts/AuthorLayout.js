@@ -52,18 +52,18 @@ export default function AuthorLayout({ children, frontMatter }) {
             </div>
           </div>
           <div className="prose max-w-none pt-8 pb-8 text-center dark:prose-dark xl:col-span-2">
-            <p>
+            <h3>
               <RoughNotation
                 type="bracket"
                 brackets={['left', 'right']}
                 show={true}
-                color="#FF0000"
+                color="#1985a1"
                 animationDelay={300}
                 animationDuration={3000}
               >
                 {text1}
               </RoughNotation>
-            </p>
+            </h3>
             <br />
             <p className="sm:block md:hidden lg:hidden">
               I am always looking to learn new things. I am currently working on a few projects

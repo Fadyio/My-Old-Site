@@ -35,8 +35,8 @@ export default function PostSimple({ frontMatter, authorDetails, next, prev, chi
               <dl>
                 <div>
                   <dt className="sr-only">Published on</dt>
-                  <dd className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
-                    <time dateTime={date}>📅 {formatDate(date)}</time>
+                  <dd className="text-base font-medium leading-6 text-gray-900 dark:text-gray-100">
+                    <time dateTime={date}>Published on {formatDate(date)}</time>
                   </dd>
                 </div>
               </dl>

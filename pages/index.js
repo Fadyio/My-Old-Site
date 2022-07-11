@@ -57,7 +57,7 @@ export default function Home({ posts }) {
             <h2 className="prose space-x-2 text-lg text-gray-800 dark:text-gray-100">
               <span>
                 Welcome to {siteMetadata.description}. I am a Software Engineer passionate about
-                frontend tech, building pipelines and automation. In my free time, I like developing
+                computer science, building open source apps and automation. In my free time, I like developing
               </span>
               <Link href="/projects" className="special-underline no-underline">
                 side projects
@@ -68,9 +68,6 @@ export default function Home({ posts }) {
               </Link>
               <span>about them.</span>
             </h2>
-            <p className="text-lg leading-7">
-              This is my place for thoughts, reflections & everything in between. Have a good read!
-            </p>
           </div>
           <div className="flex items-center justify-center">
             <div className="grid grid-cols-1 grid-rows-3 gap-8 py-12">
@@ -191,10 +188,10 @@ export default function Home({ posts }) {
                             d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
                           />
                         </svg>
-                        <span className="pr-6 text-gray-900 dark:text-gray-100">Read my story</span>
+                        <span className="pr-6 text-gray-900 dark:text-gray-100">About Me</span>
                       </span>
                       <span className="pl-6 text-indigo-400 transition duration-200 group-hover:text-gray-900 dark:group-hover:text-gray-100">
-                        Website&nbsp;&rarr;
+                        About&nbsp;&rarr;
                       </span>
                     </span>
                   </Link>
@@ -222,7 +219,7 @@ export default function Home({ posts }) {
                     <div className="space-y-2 bg-transparent bg-opacity-20 p-2 transition duration-200 hover:rounded-xl hover:bg-gray-100 dark:hover:bg-gray-800 xl:grid xl:grid-cols-4 xl:items-baseline xl:space-y-0">
                       <dl>
                         <dt className="sr-only">Published on</dt>
-                        <dd className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
+                        <dd className="text-base font-medium leading-6 text-gray-900 dark:text-gray-100">
                           <time dateTime={date}>{formatDate(date)}</time>
                         </dd>
                       </dl>
@@ -243,19 +240,10 @@ export default function Home({ posts }) {
                               <Tag key={tag} text={tag} />
                             ))}
                           </div>
-                          <div className="prose max-w-none pt-5 text-gray-500 dark:text-gray-400">
+                          <div className="prose max-w-none pt-5 text-gray-900 dark:text-gray-100">
                             {summary}
                           </div>
                         </div>
-                        {/* <div className="text-base font-medium leading-6">
-                          <Link
-                            href={`/blog/${slug}`}
-                            className="mt-2 mr-3 rounded-lg border border-primary-500 py-1 px-3 text-sm font-medium uppercase text-primary-500 transition duration-500 ease-in-out hover:bg-primary-500 hover:text-gray-100 dark:hover:text-gray-900"
-                            aria-label={`Read "${title}"`}
-                          >
-                            Read more &rarr;
-                          </Link>
-                        </div> */}
                       </div>
                     </div>
                   </article>

@@ -2,7 +2,7 @@ const siteMetadata = {
   title: 'Fady Nagh',
   author: 'Fady Nagh',
   headerTitle: 'Fady I/O',
-  description: 'my personal blog where I share my thought',
+  description: 'My personal blog where I share my programming journey and other stuff',
   language: 'en-us',
   theme: 'system', // system, dark or light
   siteUrl: 'https://fadyio.com',
