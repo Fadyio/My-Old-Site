@@ -57,7 +57,8 @@ export default function Home({ posts }) {
             <h2 className="prose space-x-2 text-lg text-gray-800 dark:text-gray-100">
               <span>
                 Welcome to {siteMetadata.description}. I am a Software Engineer passionate about
-                computer science, building open source apps and automation. In my free time, I like developing
+                computer science, building open source apps and automation. In my free time, I like
+                developing
               </span>
               <Link href="/projects" className="special-underline no-underline">
                 side projects
