@@ -33,10 +33,10 @@ const LayoutWrapper = ({ children }) => {
           <div className="flex items-center text-base leading-5">
             <div className="hidden sm:block">
               {headerNavLinks.map((link) => (
-                <Link
+                  <Link
                   key={link.title}
                   href={link.href}
-                  className="hover:bg-overlay rounded-md p-2 font-medium text-gray-900 duration-200 ease-in-out hover:bg-gray-400 hover:bg-opacity-80 dark:text-gray-100 hover:dark:bg-gray-700 sm:p-4"
+                  className="link-underline rounded py-1 px-2 text-gray-900 hover:bg-gray-200 dark:text-gray-100 dark:hover:bg-gray-700 sm:py-2 sm:px-3"
                 >
                   {link.title}
                 </Link>

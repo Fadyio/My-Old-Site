@@ -1,6 +1,7 @@
 import { currentDayName } from '@/lib/utils/dateUtils'
 import siteMetadata from '@/data/siteMetadata'
 import SocialIcon from '@/components/social-icons'
+import Link from './Link'
 
 export default function Footer() {
   return (
@@ -16,13 +17,17 @@ export default function Footer() {
           <SocialIcon kind="telegram" href={siteMetadata.telegram} size="6" />
         </div>
         <br />
-        <div className="mb-2 flex space-x-2 text-sm text-gray-500 dark:text-gray-400">
-          <div>{siteMetadata.author}</div>
-          <div>{` | `}</div>
-          <div>{`© ${new Date().getFullYear()}`}</div>
-          <div>{` | `}</div>
-          <div className="background-author-animate bg-gradient-to-r from-orange-500 via-purple-500 to-blue-500 bg-clip-text text-sm text-transparent">
-            Have a good {currentDayName()}!
+         <div className="mb-2 hidden text-sm text-gray-900 dark:text-gray-100 md:flex">
+          <div className="mx-1">
+            <Link href="https://fadyio.com/about" className="link-underline">
+              Fady Nagh{` © ${new Date().getFullYear()}`}
+            </Link>
+          </div>
+          {`•`}
+          <div className="mx-1">
+            <Link href="https://qod.shakiltech.com/" className="link-underline">
+              Have a good {currentDayName()}!
+            </Link>
           </div>
         </div>
       </div>

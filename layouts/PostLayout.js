@@ -18,7 +18,7 @@ import {
 } from 'react-share'
 import { SocialIcon } from 'react-social-icons'
 
-const editUrl = (fileName) => `${siteMetadata.siteRepo}/blob/master/data/blog/${fileName}`
+const editUrl = (fileName) => `${siteMetadata.siteRepo}/my-site/blob/main/data/blog/${fileName}`
 
 export default function PostSimple({ frontMatter, authorDetails, next, prev, children }) {
   const { slug, fileName, date, title, summary, readingTime } = frontMatter
@@ -62,30 +62,78 @@ export default function PostSimple({ frontMatter, authorDetails, next, prev, chi
             <div className="divide-y divide-gray-200 dark:divide-gray-700 xl:col-span-3 xl:row-span-2 xl:pb-0">
               <div className="prose max-w-none pt-10 pb-8 dark:prose-dark">{children}</div>
             </div>
-            <div className="flex items-center">
+
+            <div className="flex pb-5">
+              <div class="m-auto">
+                <div class="flex max-w-sm flex-col rounded-md bg-gray-200 py-8 px-10 shadow-md md:px-8">
+                  <div class="flex flex-col gap-6 md:flex-row md:gap-8">
+                    <img
+                      class="mx-auto h-24 w-24 rounded-full border-4 border-gray-300"
+                      src="/static/images/me.png"
+                      alt="Fady"
+                    />
+                    <div class="flex flex-col text-center md:text-left">
+                      <div class=" text-gray-800"></div>
+                      <div class="text-lg font-medium text-gray-800">Fady Nagh</div>
+                      <div class="mb-3 whitespace-nowrap text-gray-500">Software Developer</div>
+                      <div class="my-auto mx-auto flex flex-row gap-4 text-2xl text-gray-800 md:mx-0">
+                        <Link href={siteMetadata.github}>
+                          <SocialIcon
+                            network="github"
+                            style={{ height: 35, width: 35 }}
+                            fgColor="#fff"
+                            bgColor="#000"
+                          />
+                        </Link>
+
+                        <Link href={siteMetadata.linkedin}>
+                          <SocialIcon
+                            network="linkedin"
+                            style={{ height: 35, width: 35 }}
+                            fgColor="#fff"
+                            bgColor="#0072b1"
+                          />
+                        </Link>
+
+                        <Link href={siteMetadata.twitter}>
+                          <SocialIcon
+                            network="twitter"
+                            style={{ height: 35, width: 35 }}
+                            fgColor="#fff"
+                            bgColor="#1da1f2"
+                          />
+                        </Link>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="flex items-center justify-center space-x-3">
               <TwitterShareButton
                 url={postUrl}
                 title={title}
                 via={siteMetadata.socialAccount.twitter}
-                className="mr-2 flex items-center overflow-hidden rounded-full !bg-[#1da1f2] !p-1.5 hover:scale-110"
+                className="flex items-center overflow-hidden rounded-full !bg-[#1da1f2] hover:scale-110"
               >
                 <SocialIcon
                   network="twitter"
-                  style={{ height: 25, width: 25 }}
-                  fgColor="#1da1f2"
-                  bgColor="#fff"
+                  style={{ height: 35, width: 35 }}
+                  fgColor="#fff"
+                  bgColor="#1da1f2"
                 />
               </TwitterShareButton>
               <FacebookShareButton
                 url={postUrl}
                 quote={title}
-                className="mr-2 flex items-center overflow-hidden rounded-full !bg-[#1877f2] !p-1.5 hover:scale-110"
+                className="flex items-center overflow-hidden rounded-full !bg-[#1877f2] hover:scale-110"
               >
                 <SocialIcon
                   network="facebook"
-                  style={{ height: 25, width: 25 }}
-                  fgColor="#1877f2"
-                  bgColor="#fff"
+                  style={{ height: 35, width: 35 }}
+                  fgColor="#fff"
+                  bgColor="#1877f2"
                 />
               </FacebookShareButton>
               <EmailShareButton
@@ -93,13 +141,13 @@ export default function PostSimple({ frontMatter, authorDetails, next, prev, chi
                 subject={title}
                 separator=" : "
                 url={postUrl}
-                className="mr-2 flex items-center overflow-hidden rounded-full !bg-[#7f7f7f] !p-1.5 hover:scale-110"
+                className="flex items-center overflow-hidden rounded-full !bg-[#B61AC1] hover:scale-110"
               >
                 <SocialIcon
                   network="email"
-                  style={{ height: 25, width: 25 }}
-                  fgColor="#7f7f7f"
-                  bgColor="#fff"
+                  style={{ height: 35, width: 35 }}
+                  fgColor="#fff"
+                  bgColor="#fca311"
                 />
               </EmailShareButton>
               <LinkedinShareButton
@@ -107,52 +155,63 @@ export default function PostSimple({ frontMatter, authorDetails, next, prev, chi
                 title={title}
                 source={siteMetadata.siteUrl}
                 url={postUrl}
-                className="mr-2 flex items-center overflow-hidden rounded-full !bg-[#027fb1] !p-1.5 hover:scale-110"
+                className="flex items-center overflow-hidden rounded-full !bg-[#0072b1] hover:scale-110"
               >
                 <SocialIcon
                   network="linkedin"
-                  style={{ height: 25, width: 25 }}
-                  fgColor="#027fb1"
-                  bgColor="#fff"
+                  style={{ height: 35, width: 35 }}
+                  fgColor="#fff"
+                  bgColor="#0072b1"
                 />
               </LinkedinShareButton>
               <RedditShareButton
                 title={title}
                 url={postUrl}
-                className="mr-2 flex items-center overflow-hidden rounded-full !bg-[#ff4500] !p-1.5 hover:scale-110"
+                className="flex items-center overflow-hidden rounded-full !bg-[#ff4500] hover:scale-110"
               >
                 <SocialIcon
                   network="reddit"
-                  style={{ height: 25, width: 25 }}
-                  fgColor="#ff4500"
-                  bgColor="#fff"
+                  style={{ height: 35, width: 35 }}
+                  fgColor="#fff"
+                  bgColor="#ff4500"
                 />
               </RedditShareButton>
               <TelegramShareButton
                 url={postUrl}
                 quote={title}
-                className="mr-2 flex items-center overflow-hidden rounded-full !bg-[#1877f2] !p-1.5 hover:scale-110"
+                className="flex items-center overflow-hidden rounded-full !bg-[#1877f2] hover:scale-110"
               >
                 <SocialIcon
                   network="telegram"
-                  style={{ height: 25, width: 25 }}
-                  fgColor="#1877f2"
-                  bgColor="#fff"
+                  style={{ height: 35, width: 35 }}
+                  fgColor="#fff"
+                  bgColor="#1877f2"
                 />
               </TelegramShareButton>
               <WhatsappShareButton
                 title={title}
                 separator={' : '}
                 url={postUrl}
-                className="mr-2 flex items-center overflow-hidden rounded-full !bg-[#25D366] !p-1.5 hover:scale-110"
+                className="flex items-center overflow-hidden rounded-full !bg-[#25D366] hover:scale-110"
               >
                 <SocialIcon
                   network="whatsapp"
-                  style={{ height: 25, width: 25 }}
-                  fgColor="#25D366"
-                  bgColor="#fff"
+                  style={{ height: 35, width: 35 }}
+                  fgColor="#fff"
+                  bgColor="#25D366"
                 />
               </WhatsappShareButton>
+              <Link
+                href={editUrl(fileName)}
+                className="flex items-center overflow-hidden rounded-full !bg-[#5A6272] hover:scale-110"
+              >
+                <SocialIcon
+                  network="github"
+                  style={{ height: 35, width: 35 }}
+                  fgColor="#fff"
+                  bgColor="#000"
+                />
+              </Link>
             </div>
             <Comments frontMatter={frontMatter} />
             <footer>
