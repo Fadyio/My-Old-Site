@@ -60,19 +60,25 @@ export default function Home({ posts }) {
                 computer science, building open source apps and automation. In my free time, I like
                 developing
               </span>
-              <Link href="/projects" className="special-underline no-underline">
+              <Link
+                href="/projects"
+                className="special-underline text-gray-900 no-underline dark:text-teal-50"
+              >
                 side projects
               </Link>
               <span>and</span>
-              <Link href="/blog" className="special-underline no-underline">
+              <Link
+                href="/blog"
+                className="special-underline  text-gray-900  no-underline dark:text-slate-50"
+              >
                 blogging
               </Link>
               <span>about them.</span>
             </h2>
           </div>
           <div className="flex items-center justify-center">
-            <div className="grid grid-cols-1 grid-rows-3 gap-8 py-12">
-              <div className="my-2 grid items-start gap-8">
+            <div className="grid grid-cols-1 grid-rows-2 gap-10 py-12">
+              <div className="my-5 grid items-start gap-8">
                 <div className="group relative">
                   <div className="animate-tilt absolute -inset-0.5 rounded-lg bg-gradient-to-r from-pink-600 to-purple-600 opacity-50 blur transition duration-1000 group-hover:opacity-100 group-hover:duration-200"></div>
                   <Link href="https://github.com/fadyio">
@@ -108,7 +114,7 @@ export default function Home({ posts }) {
                         </svg>
                         <span className="pr-7 text-gray-900 dark:text-gray-100">Github</span>
                       </span>
-                      <span className="pl-9 text-yellow-300 transition duration-200 group-hover:text-gray-900 dark:group-hover:text-gray-100">
+                      <span className="pl-9 text-gray-900 transition duration-200 group-hover:text-gray-900 dark:text-slate-100 dark:group-hover:text-gray-100">
                         Github&nbsp;&rarr;
                       </span>
                     </span>
@@ -162,39 +168,8 @@ export default function Home({ posts }) {
 
                         <span className="pr-6 text-gray-900 dark:text-gray-100">Resume</span>
                       </span>
-                      <span className="pl-6 text-primary-400 transition duration-200 group-hover:text-gray-900 dark:group-hover:text-gray-100">
+                      <span className="pl-6 text-gray-900 transition duration-200 group-hover:text-gray-900 dark:text-slate-50 dark:group-hover:text-gray-100">
                         Resume&nbsp;&rarr;
-                      </span>
-                    </span>
-                  </Link>
-                </div>
-              </div>
-              <div className="my-2 grid items-start gap-8">
-                <div className="group relative">
-                  <div className="animate-tilt absolute -inset-0.5 rounded-lg bg-gradient-to-r from-pink-600 to-purple-600 opacity-50 blur transition duration-1000 group-hover:opacity-100 group-hover:duration-200"></div>
-                  <Link href="/about">
-                    <span className="relative flex items-center divide-x divide-gray-600 rounded-lg bg-white px-7 py-4 leading-none dark:bg-black">
-                      <span className="flex items-center space-x-5">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          className="h-6 w-6 -rotate-6 text-pink-600"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
-                          />
-                        </svg>
-                        <span className="pr-6 text-gray-900 dark:text-gray-100">
-                          About·Me&nbsp;&nbsp;
-                        </span>
-                      </span>
-                      <span className="pl-7 text-indigo-400 transition duration-200 group-hover:text-gray-900 dark:group-hover:text-gray-100">
-                        About&nbsp;&rarr;
                       </span>
                     </span>
                   </Link>
@@ -205,7 +180,7 @@ export default function Home({ posts }) {
         </div>
         <div>
           <h2
-            className="
+            class="
                   text-dark
                   mb-4
                   text-3xl

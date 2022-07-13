@@ -16,6 +16,7 @@ export default function AuthorLayout({ children, frontMatter }) {
     email,
     twitter,
     linkedin,
+    stackoverflow,
     github,
     Telegram,
     text1,
@@ -61,7 +62,7 @@ export default function AuthorLayout({ children, frontMatter }) {
               <SocialIcon kind="github" href={github} size="6" />
               <SocialIcon kind="linkedin" href={linkedin} size="6" />
               <SocialIcon kind="twitter" href={twitter} size="6" />
-              <SocialIcon kind="website" href="/" size="6" />
+              <SocialIcon kind="stackoverflow" href={stackoverflow} size="6" />
             </div>
           </div>
           <div className="prose max-w-none pt-8 pb-8 text-center dark:prose-dark xl:col-span-2">

@@ -12,6 +12,7 @@ const siteMetadata = {
   socialBanner: '/static/images/twitter-card.png',
   email: 'me@fadyio.com',
   github: 'https://github.com/fadyio',
+  stackoverflow: 'https://stackoverflow.com/users/14895864',
   twitter: 'https://twitter.com/fady_io',
   linkedin: 'https://www.linkedin.com/in/fadyio/',
   reddit: 'https://www.reddit.com/u/fady_io',
@@ -25,7 +26,7 @@ const siteMetadata = {
   newsletter: {
     provider: 'mailchimp',
   },
-comment: {
+  comment: {
     provider: 'giscus',
     giscusConfig: {
       repo: process.env.NEXT_PUBLIC_GISCUS_REPO,

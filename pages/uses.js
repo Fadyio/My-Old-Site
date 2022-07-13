@@ -7,12 +7,12 @@ export default function Uses() {
   return (
     <>
       <PageSEO title={`Uses - ${siteMetadata.author}`} description={siteMetadata.description} />
-      <div className="mx-auto max-w-6xl divide-y divide-gray-200 dark:divide-gray-700">
+      <div className="mx-auto max-w-6xl divide-y divide-gray-900 dark:divide-gray-100">
         <div className="space-y-2 pt-6 pb-8 md:space-y-5">
           <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
             Uses
           </h1>
-          <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
+          <p className="text-lg leading-7 text-gray-900 dark:text-gray-300">
             Software and hardware collection of things I'm using daily.
           </p>
         </div>
@@ -22,7 +22,7 @@ export default function Uses() {
               <Link
                 key={d.href}
                 href={d.href}
-                className="group mb-4 w-full cursor-pointer p-6 backdrop-filter transition duration-200 hover:rounded-xl hover:bg-gray-100 hover:bg-opacity-40 dark:hover:bg-gray-500 dark:hover:bg-opacity-40 md:w-1/2"
+                className="group mb-4 w-full cursor-pointer p-6 backdrop-filter transition duration-200 hover:rounded-xl hover:bg-gray-500 hover:bg-opacity-40 dark:hover:bg-gray-500 dark:hover:bg-opacity-40 md:w-1/2"
               >
                 <div className="flex items-center justify-start">
                   <div className="flex-shrink-0 p-3 font-sans text-gray-700 dark:text-gray-50 ">
