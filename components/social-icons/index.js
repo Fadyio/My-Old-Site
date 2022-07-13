@@ -20,7 +20,7 @@ const components = {
   telegram: telegram,
   external: External,
   youtube: youtube,
-  stackoverflow:stackoverflow,
+  stackoverflow: stackoverflow,
 }
 
 const SocialIcon = ({ kind, href, size = 8 }) => {
