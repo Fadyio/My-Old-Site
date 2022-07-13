@@ -72,11 +72,11 @@ export default function PostSimple({ frontMatter, authorDetails, next, prev, chi
                       src="/static/images/me.png"
                       alt="Fady"
                     />
-                    <div classname="flex flex-col text-center md:text-left">
-                      <div classname=" text-gray-800"></div>
-                      <div classname="text-lg font-medium text-gray-800">Fady Nagh</div>
-                      <div classname="mb-3 whitespace-nowrap text-gray-500">Software Developer</div>
-                      <div classname="my-auto mx-auto flex flex-row gap-4 text-2xl text-gray-800 md:mx-0">
+                    <div className="flex flex-col text-center md:text-left">
+                      <div className=" text-gray-800"></div>
+                      <div className="text-lg font-medium text-gray-800">Fady Nagh</div>
+                      <div className="mb-3 whitespace-nowrap text-gray-500">Software Developer</div>
+                      <div className="my-auto mx-auto flex flex-row gap-4 text-2xl text-gray-800 md:mx-0">
                         <Link href={siteMetadata.github}>
                           <SocialIcon
                             network="github"
