@@ -205,7 +205,7 @@ export default function Home({ posts }) {
         </div>
         <div>
           <h2
-            class="
+            className="
                   text-dark
                   mb-4
                   text-3xl
