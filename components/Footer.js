@@ -17,7 +17,7 @@ export default function Footer() {
           <SocialIcon kind="telegram" href={siteMetadata.telegram} size="6" />
         </div>
         <br />
-         <div className="mb-2 hidden text-sm text-gray-900 dark:text-gray-100 md:flex">
+        <div className="mb-2 hidden text-sm text-gray-900 dark:text-gray-100 md:flex">
           <div className="mx-1">
             <Link href="https://fadyio.com/about" className="link-underline">
               Fady Nagh{` © ${new Date().getFullYear()}`}

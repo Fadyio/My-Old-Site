@@ -64,19 +64,19 @@ export default function PostSimple({ frontMatter, authorDetails, next, prev, chi
             </div>
 
             <div className="flex pb-5">
-              <div class="m-auto">
-                <div class="flex max-w-sm flex-col rounded-md bg-gray-200 py-8 px-10 shadow-md md:px-8">
-                  <div class="flex flex-col gap-6 md:flex-row md:gap-8">
+              <div className="m-auto">
+                <div className="flex max-w-sm flex-col rounded-md bg-gray-200 py-8 px-10 shadow-md md:px-8">
+                  <div className="flex flex-col gap-6 md:flex-row md:gap-8">
                     <img
-                      class="mx-auto h-24 w-24 rounded-full border-4 border-gray-300"
+                      className="mx-auto h-24 w-24 rounded-full border-4 border-gray-300"
                       src="/static/images/me.png"
                       alt="Fady"
                     />
-                    <div class="flex flex-col text-center md:text-left">
-                      <div class=" text-gray-800"></div>
-                      <div class="text-lg font-medium text-gray-800">Fady Nagh</div>
-                      <div class="mb-3 whitespace-nowrap text-gray-500">Software Developer</div>
-                      <div class="my-auto mx-auto flex flex-row gap-4 text-2xl text-gray-800 md:mx-0">
+                    <div classname="flex flex-col text-center md:text-left">
+                      <div classname=" text-gray-800"></div>
+                      <div classname="text-lg font-medium text-gray-800">Fady Nagh</div>
+                      <div classname="mb-3 whitespace-nowrap text-gray-500">Software Developer</div>
+                      <div classname="my-auto mx-auto flex flex-row gap-4 text-2xl text-gray-800 md:mx-0">
                         <Link href={siteMetadata.github}>
                           <SocialIcon
                             network="github"
