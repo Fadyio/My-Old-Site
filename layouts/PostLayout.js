@@ -62,54 +62,6 @@ export default function PostSimple({ frontMatter, authorDetails, next, prev, chi
             <div className="divide-y divide-gray-200 dark:divide-gray-700 xl:col-span-3 xl:row-span-2 xl:pb-0">
               <div className="prose max-w-none pt-10 pb-8 dark:prose-dark">{children}</div>
             </div>
-
-            <div className="flex pb-5">
-              <div className="m-auto">
-                <div className="flex max-w-sm flex-col rounded-md bg-gray-200 py-8 px-10 shadow-md md:px-8">
-                  <div className="flex flex-col gap-6 md:flex-row md:gap-8">
-                    <img
-                      className="mx-auto h-24 w-24 rounded-full border-4 border-gray-300"
-                      src="/static/images/me.png"
-                      alt="Fady"
-                    />
-                    <div className="flex flex-col text-center md:text-left">
-                      <div className=" text-gray-800"></div>
-                      <div className="text-lg font-medium text-gray-800">Fady Nagh</div>
-                      <div className="mb-3 whitespace-nowrap text-gray-500">Software Developer</div>
-                      <div className="my-auto mx-auto flex flex-row gap-4 text-2xl text-gray-800 md:mx-0">
-                        <Link href={siteMetadata.github}>
-                          <SocialIcon
-                            network="github"
-                            style={{ height: 35, width: 35 }}
-                            fgColor="#fff"
-                            bgColor="#000"
-                          />
-                        </Link>
-
-                        <Link href={siteMetadata.linkedin}>
-                          <SocialIcon
-                            network="linkedin"
-                            style={{ height: 35, width: 35 }}
-                            fgColor="#fff"
-                            bgColor="#0072b1"
-                          />
-                        </Link>
-
-                        <Link href={siteMetadata.twitter}>
-                          <SocialIcon
-                            network="twitter"
-                            style={{ height: 35, width: 35 }}
-                            fgColor="#fff"
-                            bgColor="#1da1f2"
-                          />
-                        </Link>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
             <div className="flex items-center justify-center space-x-3">
               <TwitterShareButton
                 url={postUrl}
