@@ -65,169 +65,42 @@ export default function AuthorLayout({ children, frontMatter }) {
               <SocialIcon kind="stackoverflow" href={stackoverflow} size="6" />
             </div>
           </div>
-          <div className="prose max-w-none pt-8 pb-8 text-center dark:prose-dark xl:col-span-2">
-            <h3>
-              <RoughNotation
-                type="bracket"
-                brackets={['left', 'right']}
-                show={true}
-                color="#1985a1"
-                animationDelay={300}
-                animationDuration={3000}
-              >
-                {text1}
-              </RoughNotation>
-            </h3>
-            <br />
-            <p className="sm:block md:hidden lg:hidden">
-              I am always looking to learn new things. I am currently working on a few projects
-              related to
-              <span className="font-semibold">
-                {' '}
-                Natural Language Processing and Machine Learning.{' '}
-              </span>
-              At the same time I am{' '}
-              <RoughNotation
-                type="underline"
-                show={true}
-                color="#FBCFE8"
-                animationDelay={1500}
-                animationDuration={3000}
-                multiline={true}
-              >
-                actively on the lookout for good books to read.
-              </RoughNotation>
-            </p>
-            <p>
-              I am a strong advocate for open source and I am always interested in working on new
-              projects with new people. Feel free to reach out if you have anything to talk about,
-              you can reach me through{' '}
-              <Link
-                href={'mailto:fady@fadyio.com'}
-                className="special-underline no-underline hover:text-gray-100 dark:text-gray-100 hover:dark:text-gray-100"
-              >
-                Mail
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  className="ml-0.5 inline-block h-4 w-4 fill-current"
-                >
-                  <g data-name="Layer 2">
-                    <g data-name="external-link">
-                      <rect width="24" height="24" opacity="0" />
-                      <path d="M20 11a1 1 0 0 0-1 1v6a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h6a1 1 0 0 0 0-2H6a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3v-6a1 1 0 0 0-1-1z" />
-                      <path d="M16 5h1.58l-6.29 6.28a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0L19 6.42V8a1 1 0 0 0 1 1 1 1 0 0 0 1-1V4a1 1 0 0 0-1-1h-4a1 1 0 0 0 0 2z" />
-                    </g>
-                  </g>
-                </svg>
-              </Link>{' '}
-              or{' '}
-              <Link
-                href={'https://t.me/fady_io'}
-                className="special-underline no-underline hover:text-gray-100 dark:text-gray-100 hover:dark:text-gray-100"
-              >
-                Telegram
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  className="ml-0.5 inline-block h-4 w-4 fill-current"
-                >
-                  <g data-name="Layer 2">
-                    <g data-name="external-link">
-                      <rect width="24" height="24" opacity="0" />
-                      <path d="M20 11a1 1 0 0 0-1 1v6a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h6a1 1 0 0 0 0-2H6a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3v-6a1 1 0 0 0-1-1z" />
-                      <path d="M16 5h1.58l-6.29 6.28a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0L19 6.42V8a1 1 0 0 0 1 1 1 1 0 0 0 1-1V4a1 1 0 0 0-1-1h-4a1 1 0 0 0 0 2z" />
-                    </g>
-                  </g>
-                </svg>
-              </Link>
-            </p>
-            <p>
-              <Link
-                href={'/uses'}
-                className="special-underline no-underline dark:text-gray-100 hover:dark:text-gray-800"
-              >
-                Here
-              </Link>{' '}
-              you can see what I use on daily basis
-            </p>
-            <div className="text-left">
-              <h1>About this site</h1>
+          <div className="prose max-w-none pt-2 pb-4 text-center dark:prose-dark xl:col-span-2">
+            <h3>{text1}</h3>
+            <div className="prose max-w-none pt-8 pb-8 dark:prose-dark xl:col-span-2">
               <p>
-                Welcome to my home on the internet. This site functions as a blog/portfolio, a place
-                to share code and thoughts. Opinions are my own.
+                Welcome to My home on the internet, I have one main opinion about programming and
+                computer science, which is that deeply understanding the underlying technology you
+                use is essential if you want to be able to solve hard problems or forward in your
+                career. Sometimes I writes blog articles. You can find them{' '}
+                <Link
+                  href="/blog"
+                  className="special-underline  text-gray-900  no-underline dark:text-slate-50"
+                >
+                  Here
+                </Link>
               </p>
-              <p>I learned how to build this site from the most awesome people in the community:</p>
-              <ul>
-                <li>
-                  <Link
-                    href={'https://github.com/timlrx/tailwind-nextjs-starter-blog'}
-                    className="special-underline no-underline hover:text-gray-100 dark:text-gray-100 hover:dark:text-gray-100"
-                  >
-                    Timothy&apos;s Next.js and Tailwind CSS template
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      className="ml-0.5 inline-block h-4 w-4 fill-current"
-                    >
-                      <g data-name="Layer 2">
-                        <g data-name="external-link">
-                          <rect width="24" height="24" opacity="0" />
-                          <path d="M20 11a1 1 0 0 0-1 1v6a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h6a1 1 0 0 0 0-2H6a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3v-6a1 1 0 0 0-1-1z" />
-                          <path d="M16 5h1.58l-6.29 6.28a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0L19 6.42V8a1 1 0 0 0 1 1 1 1 0 0 0 1-1V4a1 1 0 0 0-1-1h-4a1 1 0 0 0 0 2z" />
-                        </g>
-                      </g>
-                    </svg>
-                  </Link>
-                  : The original template that started it all.
-                </li>
-                <li>
-                  <Link
-                    href={'https://github.com/pycoder2000/blog'}
-                    className="special-underline no-underline hover:text-gray-100 dark:text-gray-100 hover:dark:text-gray-100"
-                  >
-                    Parth Desai&apos;s fork of the above template
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      className="ml-0.5 inline-block h-4 w-4 fill-current"
-                    >
-                      <g data-name="Layer 2">
-                        <g data-name="external-link">
-                          <rect width="24" height="24" opacity="0" />
-                          <path d="M20 11a1 1 0 0 0-1 1v6a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h6a1 1 0 0 0 0-2H6a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3v-6a1 1 0 0 0-1-1z" />
-                          <path d="M16 5h1.58l-6.29 6.28a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0L19 6.42V8a1 1 0 0 0 1 1 1 1 0 0 0 1-1V4a1 1 0 0 0-1-1h-4a1 1 0 0 0 0 2z" />
-                        </g>
-                      </g>
-                    </svg>
-                  </Link>
-                  : Template starter where I bootstrapped the project.
-                </li>
-
-                <li>
-                  <Link
-                    href={'https://www.einargudni.com/'}
-                    className="special-underline no-underline hover:text-gray-100 dark:text-gray-100 hover:dark:text-gray-100"
-                  >
-                    Einar Guðjónsson
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      className="ml-0.5 inline-block h-4 w-4 fill-current"
-                    >
-                      <g data-name="Layer 2">
-                        <g data-name="external-link">
-                          <rect width="24" height="24" opacity="0" />
-                          <path d="M20 11a1 1 0 0 0-1 1v6a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h6a1 1 0 0 0 0-2H6a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3v-6a1 1 0 0 0-1-1z" />
-                          <path d="M16 5h1.58l-6.29 6.28a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0L19 6.42V8a1 1 0 0 0 1 1 1 1 0 0 0 1-1V4a1 1 0 0 0-1-1h-4a1 1 0 0 0 0 2z" />
-                        </g>
-                      </g>
-                    </svg>
-                  </Link>
-                  : Now page, navigation style, animations and much more.
-                </li>
-              </ul>
+              <p>
+                It's a reflection of my career path and interests, especially on the technical side
+                of things I am proficient in c, cpp, rust, python and bash. My current interests are
+                in the areas of Artificial intelligence.
+              </p>
+              This blog is bootstrapped from the awesome Parth Desai's{' '}
+              <Link
+                href="https://github.com/pycoder2000/blog"
+                className="special-underline  text-gray-900  no-underline dark:text-slate-50"
+              >
+                blog
+              </Link>
+              {''}. The Source code for this website is available at my{' '}
+              <Link
+                href="https://github.com/fadyio/my-site"
+                className="special-underline  text-gray-900  no-underline dark:text-slate-50"
+              >
+                Github page.
+              </Link>
             </div>
+            <br />
           </div>
         </div>
       </div>
