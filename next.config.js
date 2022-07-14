@@ -6,12 +6,12 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 const ContentSecurityPolicy = `
   default-src 'self';
   script-src 'self' 'unsafe-eval' 'unsafe-inline' giscus.app www.googletagmanager.com  www.google-analytics.com; 
-  style-src 'self' 'unsafe-inline' cdn.jsdelivr.net;
+  style-src 'self' 'unsafe-inline' *.googleapis.com cdn.jsdelivr.net;
   img-src * blob: data:;
+  frame-src giscus.app youtube.com www.youtube.com;
   media-src 'none';
   connect-src *;
-  font-src 'self' cdn.jsdelivr.net;
-  frame-src giscus.app
+  font-src 'self' fonts.gstatic.com cdn.jsdelivr.net
 `
 
 const securityHeaders = [
@@ -58,6 +58,7 @@ module.exports = withBundleAnalyzer({
   eslint: {
     dirs: ['pages', 'components', 'lib', 'layouts', 'scripts'],
   },
+    optimizeFonts: false,
   async headers() {
     return [
       {

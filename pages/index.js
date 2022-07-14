@@ -183,6 +183,7 @@ export default function Home({ posts }) {
             className="
                   text-dark
                   mb-4
+                  pb-3
                   text-3xl
                   font-bold
                   sm:text-4xl
@@ -229,6 +230,15 @@ export default function Home({ posts }) {
                           </div>
                           <div className="prose max-w-none pt-5 text-gray-900 dark:text-gray-100">
                             {summary}
+                          </div>
+                          <div className="text-base font-medium leading-6">
+                            <Link
+                              href={`/blog/${slug}`}
+                              className=" text-primary-800 hover:text-primary-600 dark:hover:text-primary-400"
+                              aria-label={`Read "${title}"`}
+                            >
+                              Read more &rarr;
+                            </Link>
                           </div>
                         </div>
                       </div>
