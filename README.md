@@ -3,9 +3,9 @@
 </div>
 
 # Fadyio.com by Fady Nagh
-![demo]()
+![demo](https://raw.githubusercontent.com/fadyio/my-site/main/public/static/images/demo.png)
 ## Google Lighthouse Performance Metrics
-
+![Performance](https://raw.githubusercontent.com/fadyio/my-site/main/public/static/images/Google%20Lighthouse%20Performance%20Metrics.png)
 <p>
   The original template of this blog is designed by <a href="https://github.com/pycoder2000" target="_blank"> Parth Desai </a> and can be found <a href="https://github.com/pycoder2000/blog/" target="_blank">here</a>
   Check out the starter documentation or fork this project and start building your own blog!
