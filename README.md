@@ -3,6 +3,8 @@
 </div>
 
 # Fadyio.com by Fady Nagh
+![demo]()
+## Google Lighthouse Performance Metrics
 
 <p>
   The original template of this blog is designed by <a href="https://github.com/pycoder2000" target="_blank"> Parth Desai </a> and can be found <a href="https://github.com/pycoder2000/blog/" target="_blank">here</a>
