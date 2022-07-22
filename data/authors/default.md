@@ -1,6 +1,6 @@
 ---
 name: Fady Nagh
-avatar: /static/images/me.png
+avatar: /static/images/me.jpeg
 occupation: softwore Engineer
 company: CodeoI
 email: me@fadyio.com
