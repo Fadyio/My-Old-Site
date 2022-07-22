@@ -8,7 +8,7 @@ const siteMetadata = {
   siteUrl: 'https://fadyio.com',
   siteRepo: 'https://github.com/Fadyio',
   siteLogo: '/static/images/logo.png',
-  image: '/static/images/me.png',
+  image: '/static/images/me.jpeg',
   socialBanner: '/static/images/twitter-card.png',
   email: 'me@fadyio.com',
   github: 'https://github.com/fadyio',
