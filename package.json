@@ -13,8 +13,12 @@
   },
   "dependencies": {
     "@fontsource/inter": "4.5.11",
+<<<<<<< HEAD
+    "@mailchimp/mailchimp_marketing": "^3.0.75",
+=======
     "@mailchimp/mailchimp_marketing": "^3.0.58",
     "@prisma/client": "^4.0.0",
+>>>>>>> main
     "@tailwindcss/forms": "^0.5.2",
     "@tailwindcss/typography": "^0.5.4",
     "autoprefixer": "^10.4.7",
