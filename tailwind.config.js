@@ -31,44 +31,44 @@ module.exports = {
         // https://coolors.co/2d00f7-6a00f4-8900f2-a100f2-b100e8-bc00dd-d100d1-db00b6-e500a4-f20089
         'gradient-1-start': '#fcc21a',
         'gradient-1-end': '#D100D1',
-        'gradient-2-start': '#D100D1',
+        'gradient-2-start': '#fcc21a',
         'gradient-2-end': '#A100F2',
         'gradient-3-start': '#A100F2',
         'gradient-3-end': '#2D00F7',
       },
       colors: {
         primary: {
-    100: "#feecb5",
-    200: "#fde185",
-    300: "#fdd654",
-    400: "#fdcb30",
-    500: "#fcc21a",
-    600: "#fcb514",
-    700: "#fca211",
-    800: "#fc910f",
-    900: "#fb730b"
+          100: '#feecb5',
+          200: '#fde185',
+          300: '#fdd654',
+          400: '#fdcb30',
+          500: '#fcc21a',
+          600: '#fcb514',
+          700: '#fca211',
+          800: '#fc910f',
+          900: '#fb730b',
         },
         'primary-color': {
-    100: "#feecb5",
-    200: "#fde185",
-    300: "#fdd654",
-    400: "#fdcb30",
-    500: "#fcc21a",
-    600: "#fcb514",
-    700: "#fca211",
-    800: "#fc910f",
-    900: "#fb730b"
+          100: '#feecb5',
+          200: '#fde185',
+          300: '#fdd654',
+          400: '#fdcb30',
+          500: '#fcc21a',
+          600: '#fcb514',
+          700: '#fca211',
+          800: '#fc910f',
+          900: '#fb730b',
         },
         'primary-color-dark': {
-    100: "#feecb5",
-    200: "#fde185",
-    300: "#fdd654",
-    400: "#fdcb30",
-    500: "#fcc21a",
-    600: "#fcb514",
-    700: "#fca211",
-    800: "#fc910f",
-    900: "#fb730b"
+          100: '#feecb5',
+          200: '#fde185',
+          300: '#fdd654',
+          400: '#fdcb30',
+          500: '#fcc21a',
+          600: '#fcb514',
+          700: '#fca211',
+          800: '#fc910f',
+          900: '#fb730b',
         },
         'background-color': '#000001',
         green: colors.emerald,
@@ -77,7 +77,7 @@ module.exports = {
       typography: (theme) => ({
         DEFAULT: {
           css: {
-            color: theme('colors.gray.300'),
+            color: theme('colors.black.100'),
             a: {
               color: theme('colors.primary.500'),
               '&:hover': {
@@ -121,7 +121,7 @@ module.exports = {
               content: 'none',
             },
             details: {
-              backgroundColor: theme('colors.gray.100'),
+              backgroundColor: theme('colors.gray.900'),
               paddingLeft: '4px',
               paddingRight: '4px',
               paddingTop: '2px',
@@ -145,7 +145,7 @@ module.exports = {
         },
         dark: {
           css: {
-            color: theme('colors.gray.300'),
+            color: theme('colors.gray.100'),
             a: {
               color: theme('colors.primary.500'),
               '&:hover': {
@@ -154,7 +154,7 @@ module.exports = {
               code: { color: theme('colors.primary.400') },
             },
             h1: {
-              fontWeight: '700',
+              fontWeight: '900',
               letterSpacing: theme('letterSpacing.tight'),
               color: theme('colors.gray.100'),
             },
