@@ -7,7 +7,7 @@ import External from './external.svg'
 import Globe from './globe.svg'
 import telegram from './telegram.svg'
 import youtube from './youtube.svg'
-import Facebook from './facebook.svg'
+import stackoverflow from './stackoverflow.svg'
 // Icons taken from: https://simpleicons.org/
 
 const components = {
@@ -19,8 +19,8 @@ const components = {
   reddit: reddit,
   telegram: telegram,
   external: External,
-  facebook: Facebook,
   youtube: youtube,
+  stackoverflow: stackoverflow,
 }
 
 const SocialIcon = ({ kind, href, size = 8 }) => {
