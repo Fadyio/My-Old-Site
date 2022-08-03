@@ -1,16 +1,17 @@
 ---
-name: Fady Nagh 
-avatar: /static/images/me.png
-occupation: softwore Engineer 
-company: CodeoI 
+name: Fady Nagh
+avatar: /static/images/me.jpeg
+occupation: softwore Engineer
+company: CodeoI
 email: me@fadyio.com
 twitter: https://twitter.com/fady_io
 youtube: https://bit.ly/3OuechY
 telegram: https://t.me/fady_io
 reddit: https://reddit.com/u/fady_io
 linkedin: https://www.linkedin.com/in/fadyio/
+stackoverflow: https://stackoverflow.com/users/14895864
 github: https://github.com/fadyio
-text1: I am an India based Data Engineer with a bachelors in Computer Science. I am passionate about Data Science and Automation. I am also fascinated with Mathematics and wish to make a career out of it someday.
-text2:
+text1: I’m a Software Engineer and writer based in Egypt.
+text2: dfdsfds
 text3:
 ---
