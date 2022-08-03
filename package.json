@@ -26,9 +26,15 @@
     "framer-motion": "^6.4.3",
     "github-slugger": "^1.3.0",
     "gray-matter": "^4.0.2",
+<<<<<<< HEAD
+    "image-size": "1.0.1",
+    "mdx-bundler": "^8.0.0",
+    "next": "12.1.4",
+=======
     "image-size": "1.0.0",
     "mdx-bundler": "^8.1.0",
     "next": "12.2.0",
+>>>>>>> 0a9215c41895f59785a98d45bd28d258e903d0ce
     "next-themes": "^0.2.0",
     "nprogress": "^0.2.0",
     "postcss": "^8.4.14",
