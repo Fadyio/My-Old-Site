@@ -13,7 +13,6 @@ const ContentSecurityPolicy = `
   connect-src *;
   font-src 'self' fonts.gstatic.com cdn.jsdelivr.net
 `
-
 const securityHeaders = [
   // https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP
   {
@@ -58,7 +57,6 @@ module.exports = withBundleAnalyzer({
   eslint: {
     dirs: ['pages', 'components', 'lib', 'layouts', 'scripts'],
   },
-    optimizeFonts: false,
   async headers() {
     return [
       {
