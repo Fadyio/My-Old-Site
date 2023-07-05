@@ -7,8 +7,6 @@
   <img alt="Logo" src="https://github.com/fadyio/my-site/blob/main/public/static/images/logo.svg" width="500" />
 </div>
 
-# Fadyio.com by Fady Nagh
-![demo](https://raw.githubusercontent.com/fadyio/my-site/main/public/static/images/demo.png)
 ## Google Lighthouse Performance Metrics
 ![Performance](https://raw.githubusercontent.com/fadyio/my-site/main/public/static/images/Google%20Lighthouse%20Performance%20Metrics.png)
 <p>
