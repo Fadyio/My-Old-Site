@@ -27,7 +27,7 @@
     "next": "12.2.0",
     "next-themes": "^0.2.0",
     "nprogress": "^0.2.0",
-    "postcss": "^8.4.14",
+    "postcss": "^8.4.31",
     "preact": "^10.8.2",
     "react": "17.0.2",
     "react-dom": "17.0.2",
